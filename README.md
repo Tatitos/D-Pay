@@ -70,3 +70,45 @@ cd d-pay</code></pre>
   <li>[ ] Basic testing framework.</li>
   <li>[ ] Oracle integration for real-time flight data
 
+<h2>🚀 Installation</h2>
+
+<p>Follow these steps to set up and run the D-Pay project locally:</p>
+
+<h3>Prerequisites</h3>
+<ul>
+  <li><strong>Node.js</strong>: Download and install the latest LTS version from <a href="https://nodejs.org">nodejs.org</a>.</li>
+  <li><strong>npm or yarn</strong>: Comes bundled with Node.js. Verify installation using:
+    <pre><code>npm -v</code></pre>
+  </li>
+  <li><strong>Hardhat</strong>: This will be installed as part of the project setup.</li>
+</ul>
+
+<h3>Steps to Set Up</h3>
+<ol>
+  <li><strong>Clone the Repository:</strong>
+    <pre><code>git clone https://github.com/yourusername/D-Pay.git
+cd d-pay</code></pre>
+  </li>
+  <li><strong>Install Dependencies:</strong>
+    Run the following command to install all required Node.js dependencies:
+    <pre><code>npm install</code></pre>
+  </li>
+  <li><strong>Compile Smart Contracts:</strong>
+    Use Hardhat to compile the smart contracts:
+    <pre><code>npx hardhat compile</code></pre>
+  </li>
+  <li><strong>Run Tests:</strong>
+    To ensure everything is working correctly, run the test suite:
+    <pre><code>npx hardhat test</code></pre>
+  </li>
+  <li><strong>Start a Local Blockchain (Optional):</strong>
+    If you'd like to test the contracts locally, you can start a Hardhat development network:
+    <pre><code>npx hardhat node</code></pre>
+  </li>
+</ol>
+
+<h3>Deploy to Testnet (Optional)</h3>
+<p>If you wish to deploy the contracts to a public testnet (e.g., Goerli, Sepolia), you'll need to set up the necessary environment variables and deploy using the following command:</p>
+<pre><code>npx hardhat run scripts/deploy.js --network goerli</code></pre>
+
+<p>Make sure to configure your Ethereum wallet and testnet network in <code>hardhat.config.js</code>.</p>

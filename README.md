@@ -69,7 +69,8 @@ cd d-pay</code></pre>
   <li>[ ] Smart contract for policy creation and claims.</li>
   <li>[ ] Basic testing framework.</li>
   <li>[ ] Oracle integration for real-time flight data
-
+</ul>
+  
 <h2>🚀 Installation</h2>
 
 <p>Follow these steps to set up and run the D-Pay project locally:</p>
